@@ -27,6 +27,6 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use("/api/users", userRoutes);
 
-app.listen(3002, () => {
-  console.log("Server started on port 3002");
+app.listen(3001, () => {
+  console.log("Server started on port 3001");
 });

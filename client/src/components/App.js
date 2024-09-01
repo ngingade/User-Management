@@ -1,5 +1,5 @@
 import Users from "../components/UserList";
-import CreateUser from "../components/CreateUser";
+import CreateUser from "../components/CreateUser/CreateUser";
 import React, { useState } from "react";
 import "../styles/styles.css";
 import { ToastContainer } from "react-toastify";

@@ -9,7 +9,7 @@ const UserForm = ({ onChange, errors, values }) => {
         <FormControl
           type="text"
           name="firstName"
-          value={values.firstName}
+          value={values ? values.firstName : ""}
           onChange={onChange}
         />
         {errors.firstName && (
@@ -21,7 +21,7 @@ const UserForm = ({ onChange, errors, values }) => {
         <FormControl
           type="text"
           name="lastName"
-          value={values.lastName}
+          value={values ? values.lastName : ""}
           onChange={onChange}
         />
         {errors.lastName && (
@@ -33,7 +33,7 @@ const UserForm = ({ onChange, errors, values }) => {
         <FormControl
           type="email"
           name="email"
-          value={values.email}
+          value={values ? values.email : ""}
           onChange={onChange}
         />
         {errors.email && <div className="text-danger">{errors.email}</div>}
